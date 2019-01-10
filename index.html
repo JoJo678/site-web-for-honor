@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleAll.css" media="all"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleIndex.css" media="all"/>
+		<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/THREE-r84.js"></script>
+		<script type="text/javascript" src="js/SPE.min.js"></script>
+		<title>Site examen</title>
+	</head>
+	
+	<body onload="smoke()">
+		<div id="header">
+			<ul id ="menu">
+				<li><a href="index.html" id="menu1" onclick="changeMenu('menu2','menu3','menu4','menu1')"> Accueil </a></li>
+				<li><a href="classes.html" id="menu2" onclick="changeMenu('menu1','menu3','menu4','menu2')"> Classes </a></li>
+				<li><a href="equipements.html" id="menu3" onclick="changeMenu('menu1','menu2','menu4','menu3')"> Equipements </a></li>
+				<li><a href="combos.html" id="menu4" onclick="changeMenu('menu1','menu2','menu43','menu4')"> Combos </a></li>
+			</ul>
+			
+			<div id="bann">
+				<img  src="images/background/forhonor2.jpg" alt="Fond For honor" />
+			</div>
+		</div>
+	
+		<div id="contenu">
+				<div id="intro">
+					<p>Présentation des différentes races et classes avec leur équipements et combos disponible pour chacun dans For Honor, c'est un jeu vidéo mêlant combat et beat them all développé 
+					par Ubisoft Montréal et édité par Ubisoft sur PlayStation 4, Xbox One
+					et Microsoft Windows, sorti le 14 février 2017.</p>
+				</div>
+		
+				<h1>Les Factions disponibles:</h1>
+		
+				<table>
+					<tr class="factionTitre">
+						<td><div class="ligne"></div></td>
+						<td id="texteTab"><h2>Les Chevaliers</h2></td>
+						<td><div class="ligne"></div></td>		
+					</tr>
+				</table>
+			
+				<img class="logo" src="images/factions/chevaliers/Chevaliers.png" alt="logo chevaliers" />
+				<img class="personnage" src="images/factions/chevaliers/chevaliers.jpg" alt="perso chevaliers" />
+				
+				<div class="centre"> 
+					<input type="button" value="En savoir plus" size="25" name="description1" onclick="afficheText('chevaliers')">
+				
+					<div id="chevaliers">
+						<p>Envoyés par la Légion de Fer pour imposer la paix, ils ont goûté à la liberté et
+						élu domicile à Ashfeld. Ils estiment que la plupart, voire la totalité des ruines antiques 
+						recouvrant leurs terres sont l'oeuvre du Grand Empire, précurseur de la Légion de Fer.</p>
+						
+						<p>Les Chevaliers d'Ashfeld ont connu l'anarchie pendant des siècles : il s'agissait alors
+						d'un ramassis de seigneurs guerriers égocentriques et autres chevaliers mercenaires en 
+						maraude. Ces dix dernières années, ils ont été regroupés sous une seule bannière, 
+						souvent contraints et forcés, par l'énigmatique Apollyon et sa Légion d'Obsidienne.</p>
+						
+						<p>Jusqu'à présent, les Chevaliers sont parvenus à protéger Ashfeld contre les attaques 
+						des Vikings et des Samouraïs. Apollyon est persuadée que la guerre est imminente et 
+						affirme à ceux qui n'ont pas encore rallié son camp que seule sa Légion peut défendre
+						leurs terres.</p>
+					</div>
+				</div>
+
+				<table>
+						<tr class="factionTitre">
+							<td><div class="ligne"></div></td>
+							<td><h2>Les Samouraïs</h2></td>
+							<td><div class="ligne"></div></td>		
+						</tr>
+				</table>
+				
+				<img class="logo" src="images/factions/samouraïs/samouraïs.png" alt="logo samourais" />
+				<img class="personnage" src="images/factions/samouraïs/samouraïs.jpg" alt="perso samourais" />
+				
+				<div class="centre"> 
+					<input type="button" value="En savoir plus" size="25" name="description2" onclick="afficheText('samourais')">
+				</div>
+				
+				<div id="samourais">	
+					<p>Issus d'une contrée lointaine de l'autre côté de l'océan, leur empereur et leur patrie
+					ont été sacrifiés au feu et à l'eau. Près d'un millénaire plus tard, cette nation nomade
+					à cesser d'errer pour fonder un nouvel empire près des terres ancestrales des Vikings et
+					de celles, contestées, des Chevaliers.</p>
+					
+					<p>Après quelques décennies passées à s'acclimater aux collines marécageuses qu'on appelle
+					le Bourbier, ils prospèrent mais restent malgré tout en infériorité numérique criante par 
+					rapport à leurs voisins. Ils devront s'appuyer sur leur supériorité martiale, leur ruse et
+					leur dévotion à leur culture pour survivre... car ils sont sans doute les derniers
+					de leur lignée.</p>
+				</div>
+				
+				<table>
+						<tr class="factionTitre">
+							<td><div class="ligne"></div></td>
+							<td><h2>Les Vikings</h2></td>
+							<td><div class="ligne"></div></td>		
+						</tr>
+				</table>
+				
+				<img class="logo" src="images/factions/vikings/vikings.png" alt="logo vikings" />
+				<img class="personnage" src="images/factions/vikings/vikings.jpg" alt="perso vikings" />
+				
+				<div class="centre"> 
+					<input type="button" value="En savoir plus" size="25" name="description3" onclick="afficheText('vikings')">
+				</div>
+				<div id="vikings">	
+					<p>Ceux qui avaient préféré rester furent conquis et assimilés par les Chevaliers.</p>
+					<p>Après avoir fondé un foyer par-delà les mers, les Vikings revinrent en masse il y a 
+					quelques siècles. De nombreuses raisons les poussaient à agir ainsi, mais ils voulaient 
+					surtout reprendre leur terre ancestrale du Nord : Valkenheim. Des centaines de clans 
+					vikings coexistent désormais dans la toundra gelée, dans une paix relative que l'observateur 
+					non averti prendra pour une guerre civile perpétuelle.</p>	
+					<p>Les Vikings sont les maîtres incontestés de la mer et des fleuves. Impresionnant spectacle 
+					que de voir les invincibles armadas de drakkars formées par cette frustre nation, 
+					qui devient alors quasiment invincible.</p>
+				</div>
+		</div>
+		
+		<footer>
+			<p>Di Vito Jordan</p>
+			<p>Messancy</p>
+			<p>0472 89 60 71</p>
+			<p>jordandivito@hotmail.com</p>
+			<p>©</p>
+		</footer>
+	</body>
+</html>

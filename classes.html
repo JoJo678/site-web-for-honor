@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleAll.css" media="all"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleClasses.css" media="all"/>
+		<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/THREE-r84.js"></script>
+		<script type="text/javascript" src="js/SPE.min.js"></script>
+		<title>Site examen</title>
+	</head>
+	
+	<body onload="smoke()">
+		<div id="header">
+			<ul id ="menu">
+				<li><a href="index.html" id="menu1" onclick="changeMenu('menu2','menu3','menu4','menu1')" > Accueil </a></li>
+				<li><a href="classes.html" id="menu2" onclick="changeMenu('menu1','menu3','menu4','menu2')"> Classes </a></li>
+				<li><a href="equipements.html" id="menu3" onclick="changeMenu('menu1','menu2','menu4','menu3')"> Equipements </a></li>
+				<li><a href="combos.html" id="menu4" onclick="changeMenu('menu1','menu2','menu43','menu4')"> Combos </a></li>
+			</ul>	
+			<div id="bann">
+				<img  src="images/background/forhonor2.jpg" alt="Fond For honor" />
+			</div>			
+		</div>
+
+		<div id="contenu">
+			<div id="chevaliers">
+				<h1 id="titre1" class="titreFactions">Les chevaliers</h1>
+				<a href="#titre1">
+			
+					<div class="triangleDetailsChev" id="triangle1" onMouseOver="choixPerso('persoChev','img1')" onMouseOut="resetChoixPerso('persoChev','img1')" onclick="cleanF('persoSam','persoVik','blockTexteS','blockTexteV','titreFactions','triangleDetailsSam','triangleDetailsVik');descr('persoChev','triangleDetailsChev','img1','triangle1','block')"> 
+						<p class="texteTriangle" >Détails</p>
+					</div>
+					<img class="persoChev" id="img1" src="images/factions/chevaliers/fleau.png" alt="perso chevaliers" title="le fléau" onMouseOver=" choixPerso('persoChev','img1')" onMouseOut="resetChoixPerso('persoChev','img1')" />
+			
+					<div class="triangleDetailsChev" id="triangle2" onMouseOver="choixPerso('persoChev','img2')" onMouseOut="resetChoixPerso('persoChev','img2')" onclick="cleanF('persoSam','persoVik','blockTexteS','blockTexteV','titreFactions','triangleDetailsSam','triangleDetailsVik');descr('persoChev','triangleDetailsChev','img2','triangle2','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoChev" id="img2" src="images/factions/chevaliers/emissaire.png" alt="perso chevaliers" title="l'émissaire" onMouseOver="choixPerso('persoChev','img2')" onMouseOut="resetChoixPerso('persoChev','img2')"  />										
+					
+					<div class="triangleDetailsChev" id="triangle3" onMouseOver="choixPerso('persoChev','img3')" onMouseOut="resetChoixPerso('persoChev','img3')" onclick="cleanF('persoSam','persoVik','blockTexteS','blockTexteV','titreFactions','triangleDetailsSam','triangleDetailsVik');descr('persoChev','triangleDetailsChev','img3','triangle3','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoChev" id="img3" src="images/factions/chevaliers/sentinelle.png" alt="perso chevaliers" title="la sentinelle" onMouseOver="choixPerso('persoChev','img3')" onMouseOut="resetChoixPerso('persoChev','img3')"  />
+					
+					<div class="triangleDetailsChev" id="triangle4" onMouseOver="choixPerso('persoChev','img4')" onMouseOut="resetChoixPerso('persoChev','img4')" onclick="cleanF('persoSam','persoVik','blockTexteS','blockTexteV','titreFactions','triangleDetailsSam','triangleDetailsVik');descr('persoChev','triangleDetailsChev','img4','triangle4','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoChev" id="img4" src="images/factions/chevaliers/paladin.png" alt="perso chevaliers" title="le paladin" onMouseOver="choixPerso('persoChev','img4')" onMouseOut="resetChoixPerso('persoChev','img4')" />
+				</a>
+			</div>
+			
+			<div id="blockTexteC" class="block">
+				<section>
+					<article class="AGauche">
+						<p id="texteAjoutC"> </p>
+					</article>
+					
+					<article class="ADroite">
+						<p id="texteAjout2C"> </p>
+					</article>
+				</section>	
+				
+				<ul class="listeClasse">
+					<li id="list1C"></li>
+					<li id="list2C"></li>
+					<li id="list3C"></li>							
+					<li id="list4C"></li>
+					<li id="list5C"></li>
+					<li id="list6C"></li>
+				</ul>
+				<div class="triangleRetour" id="triC" onclick="change('blockTexteC')">
+					<p class="texteTriangle">Retour</p>
+				</div>
+			</div>
+			
+			<div id="samouraïs">
+				<h1 id="titre2" class="titreFactions">Les samouraïs</h1>
+				<a href="#titre2">
+					<div class="triangleDetailsSam" id="triangle5" onMouseOver=" choixPerso('persoSam','img5')" onMouseOut="resetChoixPerso('persoSam','img5')" onclick="cleanF('persoChev','persoVik','blockTexteC','blockTexteV','titreFactions','triangleDetailsChev','triangleDetailsVik');descr('persoSam','triangleDetailsSam','img5','triangle5','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+						<img class="persoSam" id="img5" src="images/factions/samouraïs/orochi.png" alt="perso samourais" title="l'orochi" onMouseOver=" choixPerso('persoSam','img5')" onMouseOut="resetChoixPerso('persoSam','img5')" />	
+					
+					<div class="triangleDetailsSam" id="triangle6" onMouseOver=" choixPerso('persoSam','img6')" onMouseOut="resetChoixPerso('persoSam','img6')" onclick="cleanF('persoChev','persoVik','blockTexteC','blockTexteV','titreFactions','triangleDetailsChev','triangleDetailsVik');descr('persoSam','triangleDetailsSam','img6','triangle6','block')">
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoSam" id="img6" src="images/factions/samouraïs/nobushi.png" alt="perso samourais" title="le nobushi" onMouseOver=" choixPerso('persoSam','img6')" onMouseOut="resetChoixPerso('persoSam','img6')" />
+					
+					<div class="triangleDetailsSam" id="triangle7" onMouseOver=" choixPerso('persoSam','img7')" onMouseOut="resetChoixPerso('persoSam','img7')" onclick="cleanF('persoChev','persoVik','blockTexteC','blockTexteV','titreFactions','triangleDetailsChev','triangleDetailsVik');descr('persoSam','triangleDetailsSam','img7','triangle7','block')">
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoSam" id="img7" src="images/factions/samouraïs/shugoki.png" alt="perso samourais" title="le shugoki" onMouseOver=" choixPerso('persoSam','img7')" onMouseOut="resetChoixPerso('persoSam','img7')" />	
+					
+					<div class="triangleDetailsSam" id="triangle8" onMouseOver=" choixPerso('persoSam','img8')" onMouseOut="resetChoixPerso('persoSam','img8')" onclick="cleanF('persoChev','persoVik','blockTexteC','blockTexteV','titreFactions','triangleDetailsChev','triangleDetailsVik');descr('persoSam','triangleDetailsSam','img8','triangle8','block')">
+						<p class="texteTriangle">Détails</p>
+					</div>	
+						<img class="persoSam" id="img8" src="images/factions/samouraïs/kensei.png" alt="perso samourais" title="le kensei" onMouseOver=" choixPerso('persoSam','img8')" onMouseOut="resetChoixPerso('persoSam','img8')" />			
+				</a>
+			</div>
+			
+			<div id="blockTexteS" class="block" onclick="change('blockTexteS')">
+				<section>
+					<article class="AGauche">
+						<p id="texteAjoutS"> </p>
+					</article>
+					
+					<article class="ADroite">
+						<p id="texteAjout2S"> </p>
+					</article>
+				</section>	
+
+				<ul class="listeClasse">
+					<li id="list1S"></li>
+					<li id="list2S"></li>
+					<li id="list3S"></li>							
+					<li id="list4S"></li>
+					<li id="list5S"></li>
+					<li id="list6S"></li>
+				</ul>
+				<div class="triangleRetour" id="triS" onclick="change('blockTexteS')">
+					<p class="texteTriangle">Retour</p>
+				</div>
+			</div>
+			
+			<div id="vikings">
+				<h1 id="titre3" class="titreFactions">Les vikings</h1>
+				<a href="#titre3">
+					<div class="triangleDetailsVik" id="triangle9" onMouseOver=" choixPerso('persoVik','img9')" onMouseOut="resetChoixPerso('persoVik','img9')" onclick="cleanF('persoChev','persoSam','blockTexteC','blockTexteS','titreFactions','triangleDetailsChev','triangleDetailsSam');descr('persoVik','triangleDetailsVik','img9','triangle9','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+						<img class="persoVik" id="img9" src="images/factions/vikings/jarl.png" alt="perso vikings" title="le jarl" onMouseOver=" choixPerso('persoVik','img9')" onMouseOut="resetChoixPerso('persoVik','img9')" />
+					
+					<div class="triangleDetailsVik" id="triangle10" onMouseOver=" choixPerso('persoVik','img10')" onMouseOut="resetChoixPerso('persoVik','img10')" onclick="cleanF('persoChev','persoSam','blockTexteC','blockTexteS','titreFactions','triangleDetailsChev','triangleDetailsSam');descr('persoVik','triangleDetailsVik','img10','triangle10','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoVik" id="img10" src="images/factions/vikings/valkyrie.png" alt="perso  vikings" title="la valkyrie" onMouseOver=" choixPerso('persoVik','img10')" onMouseOut="resetChoixPerso('persoVik','img10')" />
+					
+					<div class="triangleDetailsVik" id="triangle11" onMouseOver=" choixPerso('persoVik','img11')" onMouseOut="resetChoixPerso('persoVik','img11')" onclick="cleanF('persoChev','persoSam','blockTexteC','blockTexteS','titreFactions','triangleDetailsChev','triangleDetailsSam');descr('persoVik','triangleDetailsVik','img11','triangle11','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoVik" id="img11" src="images/factions/vikings/berserker.png" alt="perso berserker" title="le berserker" onMouseOver=" choixPerso('persoVik','img11')" onMouseOut="resetChoixPerso('persoVik','img11')" />	
+					
+					<div class="triangleDetailsVik" id="triangle12" onMouseOver=" choixPerso('persoVik','img12')" onMouseOut="resetChoixPerso('persoVik','img12')" onclick="cleanF('persoChev','persoSam','blockTexteC','blockTexteS','titreFactions','triangleDetailsChev','triangleDetailsSam');descr('persoVik','triangleDetailsVik','img12','triangle12','block')"> 
+						<p class="texteTriangle">Détails</p>
+					</div>
+					<img class="persoVik" id="img12" src="images/factions/vikings/hersir.png" alt="perso hersir" title="le hersir" onMouseOver=" choixPerso('persoVik','img12')" onMouseOut="resetChoixPerso('persoVik','img12')" />
+				</a>
+			</div>
+			
+			<div id="blockTexteV" class="block" onclick="change('blockTexteV')">
+				<section>
+					<article class="AGauche">
+						<p id="texteAjoutV"> </p>
+					</article>
+					
+					<article class="ADroite">
+						<p id="texteAjout2V"> </p>
+					</article>
+				</section>	
+
+				<ul class="listeClasse">
+					<li id="list1V"></li>
+					<li id="list2V"></li>
+					<li id="list3V"></li>							
+					<li id="list4V"></li>
+					<li id="list5V"></li>
+					<li id="list6V"></li>
+				</ul>
+				<div class="triangleRetour" id="triV" onclick="change('blockTexteV')"><p class="texteTriangle">Retour</p></div>
+			</div>
+		</div>
+		
+		<footer>
+			<p>Di Vito Jordan</p>
+			<p>Messancy</p>
+			<p>0472 89 60 71</p>
+			<p>jordandivito@hotmail.com</p>
+			<p>©</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+/*Style pour la page classe------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@keyframes anim{
+	0%{
+		transform: translateX(-100%);
+		-ms-transform: translateX(-100%); /* IE 9 */
+		-webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
+		-moz-transform: translateX(-100%);/*Moz3.5*/
+		-o-transform: translateX(-100%);/*Opera10.5*/
+	}
+	100%{
+		transform: translateX(0%);
+		-ms-transform: translateX(0%); /* IE 9 */
+		-webkit-transform: translateX(0%); /* Chrome, Safari, Opera */
+		-moz-transform: translateX(0%);/*Moz3.5*/
+		-o-transform: translateX(0%);/*Opera10.5*/
+	}	
+}
+@keyframes anim2{
+	0%{
+		transform: translateX(0%);
+		-ms-transform: translateX(0%); /* IE 9 */
+		-webkit-transform: translateX(0%); /* Chrome, Safari, Opera */
+		-moz-transform: translateX(0%);/*Moz3.5*/
+		-o-transform: translateX(0%);/*Opera10.5*/
+	}
+	100%{
+		transform: translateX(-100%);
+		-ms-transform: translateX(-100%); /* IE 9 */
+		-webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
+		-moz-transform: translateX(-100%);/*Moz3.5*/
+		-o-transform: translateX(-100%);/*Opera10.5*/
+	}	
+}
+@keyframes animPerso{
+	0%{	
+		transform: translateX(-50%);	
+		-ms-transform: translateX(-50%); /* IE 9 */
+		-webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+		-moz-transform: translateX(-50%);/*Moz3.5*/
+		-o-transform: translateX(-50%);/*Opera10.5*/
+	}
+}
+@keyframes animPerso2{
+	0%{	
+		transform: translateX(0%);	
+		-ms-transform: translateX(0%); /* IE 9 */
+		-webkit-transform: translateX(0%); /* Chrome, Safari, Opera */
+		-moz-transform: translateX(0%);/*Moz3.5*/
+		-o-transform: translateX(0%);/*Opera10.5*/
+	}
+}
+#contenu{
+	padding-bottom:0%;
+}
+article.ADroite p, article.AGauche p{	
+	margin-left:3%;
+	margin-top:2%;
+	text-align:justify;
+}
+article.ADroite{
+	float:right;
+	padding-right:1%;
+}
+article.AGauche{
+	float:left;	
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////listeclasses////////////////////////*/
+/*listes de chaque classes////////////////////////////////////////////////////////////*/
+.listeClasse {
+	float:left;
+	display:inline-block;
+	margin-top:5%;
+}
+	.listeClasse li{
+		list-style-image:url(../picto/manette.png);
+		list-style-type:none;
+		font-size:22px;	
+		font-family: sans-serif,Helvetica,Arial;
+	}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////finlisteclasses/////////////////////*/
+
+/*triangle contenu dans chaque image des classes//////////////////////////////////////*/
+.triangleDetailsChev, .triangleDetailsSam, .triangleDetailsVik{
+	
+	border-bottom: 125px solid #919389; 
+	border-left: 125px solid transparent;
+	position:absolute;
+	opacity:0.8;
+	display:inline;
+    z-index:1;
+	margin-top:26.30%;
+}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+
+/*position du triangle dans chaque image des classes//////////////////////////////////*/
+#triangle1, #triangle5, #triangle9{
+	margin-left:12.2%;
+}
+#triangle2,#triangle6,#triangle10{
+	margin-left:15.21%; 
+}
+#triangle3,#triangle7,#triangle11{
+	margin-left:11.9%; 
+}
+#triangle4,#triangle8,#triangle12{
+	margin-left:15.79%; 
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+/*position du triangle dans chaque image des classes///////////////////////////////////*/
+.triangleRetour{
+	float:right;
+	border-bottom: 125px solid #919389; 
+	border-left: 125px solid transparent;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Texte contenu dans les triangles/////////////////////////////////////////////////////*/
+.texteTriangle{
+	transform:rotate(-45deg); 
+	-ms-transform:rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	-moz-transform: rotate(-45deg);/*Moz3.5*/
+	-o-transform: rotate(-45deg);/*Opera10.5*/
+	bottom:-100px;
+	right:10px;
+	position:absolute;
+	color:black;
+	opacity:1;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+/*images chevaliers samourais et vikings/////////////////////////////////////////////////*/
+#chevaliers .persoChev, #samouraïs .persoSam, #vikings .persoVik{
+	background: -moz-linear-gradient(top,#919389,#a0b3b7,#a0b3b7,#a0b3b7,#919389);
+	background: -webkit-linear-gradient(top,#919389,#a0b3b7,#a0b3b7,#a0b3b7,#919389); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(top,#919389,#a0b3b7,#a0b3b7,#a0b3b7,#919389); /* Opera 11.1-12.0 */
+    background: linear-gradient(top,#919389,#a0b3b7,#a0b3b7,#a0b3b7,#919389); /* Standard syntax */
+	border:1px solid black;	
+	transition: opacity 2s;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-o-transition: opacity 2s;
+}
+
+/*images chevaliers, samouraïs et vikings//////////////////////////////////////////////////*/
+#chevaliers, #samouraïs, #vikings{
+	text-align:center;
+	padding-bottom:1%;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*titre chevalier, samourais et vikings///////////////////////////////////////////////////*/
+#titre1, #titre2, #titre3{
+	border-top:2px solid;
+	border-bottom:1px solid;
+	margin-bottom:0.5%;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*bloc texte chevaliers cacher////////////////////////////////////////////////////////////*/
+#blockTexteC{
+	height:624px;
+	display:none;
+	border-top:1px solid;
+	z-index:-1;/*pour qu'il soit en dessous du personnage*/
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*bloc texte samouraïs et viking cacher///////////////////////////////////////////////////*/
+#blockTexteS, #blockTexteV{
+	height:624px;
+	display:none;
+	border-top:1px solid;
+	z-index:-1;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

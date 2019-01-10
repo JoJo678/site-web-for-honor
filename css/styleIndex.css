@@ -1,0 +1,95 @@
+/*Style pour la page index-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@keyframes animBlock{
+	0%{
+		transform: translateY(-100%);
+		-ms-transform: translateY(-100%); /* IE 9 */
+		-webkit-transform: translateY(-100%); /* Chrome, Safari, Opera */
+		-moz-transform: translateY(-100%);/*Moz3.5*/
+		-o-transform: translateY(-100%);/*Opera10.5*/
+	}
+}
+table{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	margin-top:5%;
+}
+td{
+	width:300px;
+}
+
+#intro p{
+	padding:1%;
+}
+
+/*Style ligne des factions//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.ligne{
+	background: -moz-linear-gradient(left,#b2b2b2,#252523,#252523,#252523,#b2b2b2);/* Firefox 3.6-15 */
+	background: -webkit-linear-gradient(left,#b2b2b2,#252523,#252523,#252523,#b2b2b2); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(left,#b2b2b2,#252523,#252523,#252523,#b2b2b2); /* Opera 11.1-12.0 */
+    background: linear-gradient(left,#b2b2b2,#252523,#252523,#252523,#b2b2b2); /* Standard syntax */
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:3px;	
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*Logo des factions////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+img.logo{
+	display:block;
+	margin-top:2%;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*Image des factions////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+img.personnage{
+	width:99.9%;
+	margin-top:2%;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	position:relative;
+	z-index:1;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*Bouton en savoir plus */
+.centre{
+	text-align:center;
+	margin-top:-2%;
+}
+input {
+	font-size: 25px;
+	background-image:url(images/background/1.jpg);
+	height:50px;
+	width:200px;
+	position:relative;
+	z-index:1;
+	box-shadow: 5px 5px 5px black;
+	-moz-box-shadow: 5px 5px 5px black;
+	-webkit-box-shadow: 5px 5px 5px black;
+}
+/*Bouton en savoir plus */
+
+#chevaliers, #samourais, #vikings{
+	margin-top:-1%;
+	padding-top:2%;
+	text-align:justify;
+	padding-left:1%;
+	padding-right:1%;
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	background:rgba(160, 179, 183, 0.3);
+	display:none;
+	position:relative;
+	z-index:0;
+}
+	#chevaliers p, #samourais p, #vikings p{
+		padding-bottom:1.5%;
+	}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

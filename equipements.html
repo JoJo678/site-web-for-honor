@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleAll.css" media="all"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleEquipements.css" media="all"/>
+		<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/THREE-r84.js"></script>
+		<script type="text/javascript" src="js/SPE.min.js"></script>
+		<title>Site examen</title>
+		
+	</head>
+	
+	<body onload="smoke()">
+		<div id="header">
+			<ul id ="menu">
+				<li><a href="index.html" id="menu1" onclick="changeMenu('menu2','menu3','menu4','menu1')" > Accueil </a></li>
+				<li><a href="classes.html" id="menu2" onclick="changeMenu('menu1','menu3','menu4','menu2')"> Classes </a></li>
+				<li><a href="equipements.html" id="menu3" onclick="changeMenu('menu1','menu2','menu4','menu3')"> Equipements </a></li>
+				<li><a href="combos.html" id="menu4" onclick="changeMenu('menu1','menu2','menu43','menu4')"> Combos </a></li>
+			</ul>	
+			<div id="bann">
+				<img  src="images/background/forhonor2.jpg" alt="Fond For honor" />
+			</div>			
+		</div>
+		
+
+		<div id="contenu">
+			<h1 id="titre1" >Les armes</h1>
+			
+			<div class="slide">
+				<button class="butDroite"  onclick="plusDivs(+1)">&#10095;</button>
+				<button class="butGauche" onclick="plusDivs(-1)">&#10094;</button>
+				
+				<img class="slideshow" id="slide1" src="images/slide/1.jpg" alt="slide armes"/>
+				<div class="texteSlide" id="txt1">
+					<h2 id="titreArme">Les boucliers</h2>
+					<p>Utilisé par le fléau, le jarl et la valkyrie pour se protéger et contre attaquer efficacement</p>
+				</div>
+					
+				<img class="slideshow" src="images/slide/2.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">La lance</h2>
+					<p>c'est une pointe en métal aiguisé au bout d'un bâton de bois,entre les mains d'une valkyrie l'ennemie 
+					risque de se retrouver à terre à la moindre innattention et bouclier</p>
+				</div>
+				
+				<img class="slideshow" src="images/slide/3.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">Le nagatina</h2>
+					<p>Le nagatina est manié par les nobushi, c'est une arme longue composé d'un manche ne bois et d'une lame incurvée, possède une extrême polyvalence : 
+					poignarder, étourdir ou bien accrocher les ennemis</p>	
+				</div>
+				
+				<img class="slideshow" src="images/slide/4.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">Le nodachi</h2>
+					<p>version longue du katana, conçue à l'origine pour les cavaliers, les kensei sont assez fort que pour 
+					l'utiliser comme un katana</p>
+				</div>
+				
+				<img class="slideshow" src="images/slide/5.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">Le glaive</h2>
+					<p>Le glaive est utilisé par le Jarl, il assène des attaques mortelles à courte portée</p>	
+				</div>
+				
+				<img class="slideshow" src="images/slide/6.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">La dague</h2>
+					<p>La dague est utilisé par le spadassin, inflige de faible dégât mais est polyvalente et rapide</p>	
+				</div>
+				
+				<img class="slideshow" src="images/slide/7.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">L'épée</h2>
+					<p>L'épée est utilisé par le spadassin, en combinaison avec la dague leur puissance ne sont pas à sous estimer</p>
+				</div>
+				
+				<img class="slideshow" src="images/slide/8.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">L'épée longue</h2>
+					<p>L'épée longue est utilisé par la sentinelle, Imposante épéez à double tranchant, elle se manie à deux mains.
+					C'est une arme polyvalente qui s'utilise en attaque et en défense,</p>
+				</div>
+				
+				<img class="slideshow" src="images/slide/9.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">Le katana</h2>
+					<p>Utilisé par les orochis, le katana est incurvée avec un seul tranchant et constituée d'un acier de grande qualité,
+					c'est un trésor famillial hérité</p>	
+				</div>
+				
+				<img class="slideshow" src="images/slide/10.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">La hache d'armes (Emissaire) </h2>
+					<p>La lame comprend une extrémité affûtée pour frapper de taille et l'autre pour des coups contondants, 
+					la pointe permet de donner des redoutables estocs</p>	
+				</div>
+				
+				<img class="slideshow" src="images/slide/11.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">La hache d'armes (Hersir) </h2>
+					<p>Composé d'un énorme fer fixé sur un long manche à bois, arme de guerre et outil pour ce qui sépare le hersir de son butin. 
+					Une des armes les plus redoutables</p>	
+				</div>
+				
+				<img class="slideshow" src="images/slide/12.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">La hache viking</h2>
+					<p>C'est une arme effroyable des berserker, Facile à manier et bien équilibré qui permet de la lancer à courte distance</p>
+				</div>
+			
+				<img class="slideshow" src="images/slide/13.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">Le kanabo</h2>
+					<p>Comparable à un gourdin, les shugoki sont exposés à une contre-attaque meurtrière mais lorsqu' elle fait mouche ses dégats sont dévastateurs</p>
+				</div>
+				
+				<img class="slideshow" src="images/slide/14.jpg" alt="slide armes"/>
+				<div class="texteSlide">
+					<h2 id="titreArme">Le fléau</h2>
+					<p>Il est manié par le fléau, composé d'une lourde chaîne en fer reliant une solide poignée de bois et un énorme boulet garni de pointes. Il inflige d'effroyables commotions en broyant les armures et les os</p>
+				</div>
+			</div>						
+		</div>
+		
+		<footer>
+			<p>Di Vito Jordan</p>
+			<p>Messancy</p>
+			<p>0472 89 60 71</p>
+			<p>jordandivito@hotmail.com</p>
+			<p>©</p>
+		</footer>
+	</body>
+</html>

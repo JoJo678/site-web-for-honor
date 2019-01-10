@@ -1,0 +1,818 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleAll.css" media="all"/>
+		<link rel="Stylesheet" type="text/css" href="css/styleCombos.css" media="all"/>
+		<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/THREE-r84.js"></script>
+		<script type="text/javascript" src="js/SPE.min.js"></script>
+		<title>Site examen</title>
+	</head>
+	
+	<body onload="smoke()" onkeydown="reset(event)">
+		<div id="header">
+			<ul id ="menu">
+				<li><a href="index.html" id="menu1" onclick="changeMenu('menu2','menu3','menu4','menu1')" > Accueil </a></li>
+				<li><a href="classes.html" id="menu2" onclick="changeMenu('menu1','menu3','menu4','menu2')"> Classes </a></li>
+				<li><a href="equipements.html" id="menu3" onclick="changeMenu('menu1','menu2','menu4','menu3')"> Equipements </a></li>
+				<li><a href="combos.html" id="menu4" onclick="changeMenu('menu1','menu2','menu43','menu4')"> Combos </a></li>
+			</ul>	
+			
+			<div id="bann">
+				<img  src="images/background/forhonor2.jpg" alt="Alternative texte de l'image" />
+			</div>
+		</div>
+	
+		<div id="contenu">
+			<ul class="sousMenu">
+				<li><a href="#interieur" class="hoverMenu" id="lien1" onclick="changePerso('lien1','choix1','box')" > Fléau </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien2" onclick="changePerso('lien2','choix2','box2')"> Sentinelle </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien3" onclick="changePerso('lien3','choix3','box3')"> Spadassin </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien4" onclick="changePerso('lien4','choix4','box4')"> Emissaire </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien5" onclick="changePerso('lien5','choix5','box5')" > Kensei </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien6" onclick="changePerso('lien6','choix6','box6')"> Orochi </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien7" onclick="changePerso('lien7','choix7','box7')"> Shugoki </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien8" onclick="changePerso('lien8','choix8','box8')"> Nobushi </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien9" onclick="changePerso('lien9','choix9','box9')" > Hersir </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien10" onclick="changePerso('lien10','choix10','box10')"> Berserker </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien11" onclick="changePerso('lien11','choix11','box11')"> Jarl </a></li>
+				<li><a href="#interieur" class="hoverMenu" id="lien12" onclick="changePerso('lien12','choix12','box12')"> Valkyrie </a></li>
+			</ul>	
+				
+			<div id="interieur">
+				<div class="descriptif" id="choix1">
+					<section>
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" checked="checked" onclick="changeVid('box','choix1')"/> 
+							<label>Attaque puissante en charge :</label> 
+							<p>Maintenir RT</p>
+						</article>
+						
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Attrition du conscrit :</label> 
+							<p>RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Argument ultime :</label> 
+							<p>RB - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Etau de la Faucheuse :</label> 
+							<p>RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Défense totale :</label> 
+							<p>R + BAS</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Charge de bouclier :</label> 
+							<p>maintenir L - X</p>
+						</article>
+						
+						<article>
+							<input class="box"  type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Coup de bouclier :</label> 
+							<p>L + A - X</p>
+						</article>
+						
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Coup de bouclier enchaîné :</label> 
+							<p>RT - X</p>
+						</article>
+						
+						<article>
+							<input class="box" type="radio" name="cond" value="ok" onclick="changeVid('box','choix1')"/> 
+							<label>Riposte à coups de bouclier :</label> 
+							<p>R + BAS - X</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix2">
+					<section>
+						<article>
+							<input class="box2"  type="radio" name="cond2" value="ok" checked="checked" onclick="changeVid('box2','choix2')"/> 
+							<label>Percée de l'avant-garde :</label> 
+							<p>RB - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box2" type="radio" name="cond2" value="ok" onclick="changeVid('box2','choix2')"/> 
+							<label>Assaut du gardien :</label> 
+							<p>RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box2"  type="radio" name="cond2" value="ok" onclick="changeVid('box2','choix2')"/> 
+							<label>Fureur de la Sentinelle :</label> 
+							<p>RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box2" type="radio" name="cond2" value="ok" onclick="changeVid('box2','choix2')"/> 
+							<label>Taille avec élan :</label> 
+							<p>maintenir L - RT</p>
+						</article>
+					</section>
+					
+					<section>	
+						<article>
+							<input class="box2"  type="radio" name="cond2" value="ok" onclick="changeVid('box2','choix2')"/> 
+							<label>Contre-attaque foudroyante :</label> 
+							<p>R - RB</p>
+						</article>
+						
+						<article>
+							<input class="box2" type="radio" name="cond2" value="ok" onclick="changeVid('box2','choix2')"/> 
+							<label>Coup d'épaule :</label> 
+							<p>L + A - X</p>
+						</article>
+						
+						<article>
+							<input class="box2" type="radio" name="cond2" value="ok" onclick="changeVid('box2','choix2')"/> 
+							<label>Coup d'épaule enchaîné :</label> 
+							<p>RB - X - RB</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix3">
+					<section >
+						<article>
+							<input class="box3"  type="radio" name="cond3" value="ok" checked="checked" onclick="changeVid('box3','choix3')"/> 
+							<label>Lames virevoltantes :</label> 
+							<p>RB - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box3"  type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Frappes du derviche :</label> 
+							<p>RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box3"  type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Danse de l'épée :</label> 
+							<p>RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box3"  type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Fente en glissade :</label> 
+							<p>maintenir L + X</p>
+						</article>
+						
+						<article>
+							<input class="box3" type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Entaille profonde :</label> 
+							<p>RT - R</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box3" type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Estoc cinétique :</label> 
+							<p>L + A - RT</p>
+						</article>
+						
+						<article>
+							<input class="box3" type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Pas de côté et frappe :</label> 
+							<p>L + A - RT</p>
+						</article>
+						
+						<article>
+							<input class="box3" type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Coup de poignard :</label> 
+							<p>X - RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box3" type="radio" name="cond3" value="ok" onclick="changeVid('box3','choix3')"/> 
+							<label>Riposte au poignard :</label> 
+							<p>Déviation - RB</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix4">
+					<section>
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" checked="checked" onclick="changeVid('box4','choix4')"/> 
+							<label>Tables de la Loi :</label> 
+							<p>RB - RT - RB</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Juge et bourreau :</label> 
+							<p>RB - RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Justice expéditive :</label> 
+							<p>RT - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Coup final Justice expéditive :</label> 
+							<p>RT - RB - R HAUT + réussir RT, RB</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Empalement :</label> 
+							<p>maintenir L + RT</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Empalement en riposte :</label> 
+							<p>Parade, R GAUCHE ou DROITE + RT</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Justice aveugle :</label> 
+							<p>Parade, R HAUT + RT</p>
+						</article>
+					</section>	
+					
+					<section>
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Riposte faible :</label> 
+							<p>Parade, RB</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Déblayage :</label> 
+							<p>Parade, RB + RT</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Bras de la Justice :</label> 
+							<p>L + X</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Rejet :</label> 
+							<p>L + A, X</p>
+						</article>
+						
+						<article>
+							<input class="box4" type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Rejet (variante) :</label> 
+							<p>Blocage, X</p>
+						</article>
+						
+						<article>
+							<input class="box4"  type="radio" name="cond4" value="ok" onclick="changeVid('box4','choix4')"/> 
+							<label>Rejet (alternatif) :</label> 
+							<p> RT, X</p>
+						</article>
+					</section>
+				</div>
+			
+				<div class="descriptif" id="choix5">
+					<section>
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" checked="checked" onclick="changeVid('box5','choix5')"/> 
+							<label>Aube d'Acier :</label> 
+							<p>RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Esprit inexorable :</label> 
+							<p>RB - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Forme du dragon :</label> 
+							<p>RB - RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Destin du Kensei :</label> 
+							<p>RT - RT - RT</p>
+						</article>	
+					</section>
+					
+					<section>
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Balayage avec élan :</label> 
+							<p>maintenir L - RT</p>
+						</article>
+						
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Brise-heaume :</label> 
+							<p>L + A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Frappe rapide :</label> 
+							<p>L + A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box5" type="radio" name="cond5" value="ok" onclick="changeVid('box5','choix5')"/> 
+							<label>Percée du tigre :</label> 
+							<p>L + A - X</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix6">	
+					<section>
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" checked="checked" onclick="changeVid('box6','choix6')"/> 
+							<label>Tailles du Contrevent :</label> 
+							<p>RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Double frappe foudroyante :</label> 
+							<p>RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Tailles du Tsunami :</label> 
+							<p>RT - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Déferlante :</label> 
+							<p>L - RT</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Raz-de-marée :</label> 
+							<p>L + R HAUT + RT</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Charge des tempêtes :</label> 
+							<p>L + A - RT</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Frappe foudroyante :</label> 
+							<p>L+ A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Taille du zéphyr :</label> 
+							<p>L + A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Bourrasque :</label> 
+							<p>Déviation - RB</p>
+						</article>
+						
+						<article>
+							<input class="box6" type="radio" name="cond6" value="ok" onclick="changeVid('box6','choix6')"/> 
+							<label>Ouragan :</label> 
+							<p>Déviation - RT</p>
+						</article>
+					</section>
+			
+				</div>	
+				
+				<div class="descriptif" id="choix7">
+					<section>
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" checked="checked" onclick="changeVid('box7','choix7')"/> 
+							<label>Attaque puissante en charge :</label> 
+							<p>maintenir RT</p>
+						</article>
+						
+						<article>
+							<input class="box7"  type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Attaque en deux temps :</label> 
+							<p>RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Briseurs d'os :</label> 
+							<p>RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Coup de tonnerre :</label> 
+							<p>maintenir L - RT</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Charge de l'Oni :</label> 
+							<p>maintenir L - A</p>
+						</article>
+						
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Etreinte démoniaque :</label> 
+							<p>L + X</p>
+						</article>
+						
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Sphère démoniaque :</label> 
+							<p>réussir X, RT</p>
+						</article>
+						
+						<article>
+							<input class="box7" type="radio" name="cond7" value="ok" onclick="changeVid('box7','choix7')"/> 
+							<label>Coup de tête :</label> 
+							<p>réussir RB ou RT, X</p>
+						</article>
+					</section>
+				</div>
+			
+				<div class="descriptif" id="choix8">
+					<section>
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" checked="checked" onclick="changeVid('box8','choix8')"/> 
+							<label>Nid de vipère :</label> 
+							<p>RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Planter de crochets :</label> 
+							<p>RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Forme du fer-de-lance :</label> 
+							<p>RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Estoc couleuvrin :</label> 
+							<p>L - RB</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Entaille lovée :</label> 
+							<p>L - RT</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Posture secrète :</label> 
+							<p>R - BAS</p>
+						</article>
+					</section>
+	
+					<section>
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Frappe du cobra :</label> 
+							<p>L + A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Frappe du cobra enchaîné :</label> 
+							<p>réussir X - X - RB</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Repli de la vipère :</label> 
+							<p>L + RB</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Coup de pied :</label> 
+							<p>RB ou RT - X</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Forme du crotale :</label> 
+							<p>L + A - RT</p>
+						</article>
+						
+						<article>
+							<input class="box8" type="radio" name="cond8" value="ok" onclick="changeVid('box8','choix8')"/> 
+							<label>Recul expéditif :</label> 
+							<p>Blocage - A</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix9">
+					<section>
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" checked="checked" onclick="changeVid('box9','choix9')"/> 
+							<label>Taillade et poussée :</label> 
+							<p>RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Taillade sauvage :</label> 
+							<p>RT - RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Tailles sinueuses :</label> 
+							<p>RT - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Fureur du Hersir :</label> 
+							<p>RB +RT</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Cavalcade :</label> 
+							<p>maintenir L - maintenir X</p>
+						</article>
+						
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Fauchage chargé :</label> 
+							<p>maintenir L - RT</p>
+						</article>
+						
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Coup étourdissant :</label> 
+							<p>L + A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box9" type="radio" name="cond9" value="ok" onclick="changeVid('box9','choix9')"/> 
+							<label>Assaut Brise-Garde :</label> 
+							<p>L + A - X</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix10">
+					<section>
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" checked="checked" onclick="changeVid('box10','choix10')"/> 
+							<label>Danse des lames jumelles :</label> 
+							<p>RB - RT, ou RT - RB</p>
+						</article>
+						
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" onclick="changeVid('box10','choix10')"/> 
+							<label>Etreinte de l'ours :</label> 
+							<p>RT - RT - RT</p>
+						</article>
+						
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" onclick="changeVid('box10','choix10')"/> 
+							<label>Charge du sanglier :</label> 
+							<p>L + RT</p>
+						</article>
+						
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" onclick="changeVid('box10','choix10')"/> 
+							<label>Tranche-tête :</label> 
+							<p>L + A - RB</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" onclick="changeVid('box10','choix10')"/> 
+							<label>Coup tournoyant :</label> 
+							<p>L + A - RB</p>
+						</article>
+						
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" onclick="changeVid('box10','choix10')"/> 
+							<label>Brise-crâne :</label> 
+							<p>L + A - RT</p>
+						</article>
+						
+						<article>
+							<input class="box10" type="radio" name="cond10" value="ok" onclick="changeVid('box10','choix10')"/> 
+							<label>Taille effrénée :</label> 
+							<p>L - RB - RT</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix11">
+					<section>
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" checked="checked" onclick="changeVid('box11','choix11')"/> 
+							<label>Frappes ciblées :</label> 
+							<p>RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Tranchage et taillade :</label> 
+							<p>RT - RB</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Charge déferlante :</label> 
+							<p>maintenir L + X</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Saut brise-tête :</label> 
+							<p>maintenir L + RT</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Saut brise-tête (variante) :</label> 
+							<p>L + A - RT</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Combo Saut brise-tête :</label> 
+							<p>L + A - RT - réussir X - RB</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Contre-taille :</label> 
+							<p>R BAS + RT</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Blocage et estoc :</label> 
+							<p>R BAS - Blocage - RB</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Contre au bouclier :</label> 
+							<p>Parade - X</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Combo contres au bouclier :</label> 
+							<p>Parade - X - RB</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Coup de tête :</label> 
+							<p>L + A - X</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Riposte Coup de tête :</label> 
+							<p>R BAS - X</p>
+						</article>
+						
+						<article>
+							<input class="box11"  type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Combo Coup de tête :</label> 
+							<p>R BAS - X - RB</p>
+						</article>
+						
+						<article>
+							<input class="box11" type="radio" name="cond11" value="ok" onclick="changeVid('box11','choix11')"/> 
+							<label>Défense totale :</label> 
+							<p>R BAS</p>
+						</article>
+					</section>
+				</div>
+				
+				<div class="descriptif" id="choix12">
+					<section>
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" checked="checked" onclick="changeVid('box12','choix12')"/> 
+							<label>Chasseur de sangliers :</label> <p>RB - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Estocs et taillade :</label> <p>RB - RB - RT</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Fureur du busard :</label> <p>RT - RB - RB</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Charge du chasseur :</label> <p>maintenir L + RT</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Estoc du prédateur :</label> <p>L + A, RB</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Frappe du chasseur :</label> <p>L + A, RB</p>
+						</article>
+					</section>
+					
+					<section>
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Frappe au bouclier :</label> <p>RT - X</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Placage au bouclier :</label> <p>L + A, X</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Soumission :</label> <p>Contre-esquive, RT</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Coup de tête du bélier :</label> <p>X, maintenir X</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Balayage d'hast :</label> <p>X, X, L + RT</p>
+						</article>
+						
+						<article>
+							<input class="box12" type="radio" name="cond12" value="ok" onclick="changeVid('box12','choix12')"/> 
+							<label>Frappe au bouclier vers Balayage d'hast :</label> <p>RT - X - L + RT</p>
+						</article>
+					</section>
+				</div>
+				<video controls src="videos/fleau/3.mp4" class="vid" >Ici la description alternative</video>
+			</div>
+		</div>
+		
+		<footer>
+			<p>Di Vito Jordan</p>
+			<p>Messancy</p>
+			<p>0472 89 60 71</p>
+			<p>jordandivito@hotmail.com</p>
+			<p>©</p>
+		</footer>
+	</body>
+</html>
